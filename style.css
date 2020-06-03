@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}/* *{}は全部の要素に指定できる(余計なことはいないでくださいセット)*/
+
+#container{
+  width: 100%;
+  max-width: 1280px;
+  min-width: 512px;
+  margin: 0 auto;
+  font-family: "Comic Sans MS";
+  /*font-family: "Kokoro";*/
+}
+
+header {
+   /*position:relative;*/
+   /*height: 8rem;*/
+   /*background: #fffae2;*/
+   background: linear-gradient(#fff,#fff,#fff, #fffae2);
+   /*box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);*/
+   /*text-align: center;*/
+   margin: 1rem;
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between;/*範囲の中に均等に配置*/
+ }
+
+  .back{
+    /*margin:1.5rem 0rem;*/
+    max-width: 50%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+
+#title{
+  position: absolute;
+  top:20%;
+  left: 35%;
+  width: 40%;
+}
+
+
+nav {
+  padding: 1rem 3rem ;
+  background: #fff;
+}
+
+  nav ul{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;/*範囲の中に均等に配置*/
+  }
+
+  nav ul li{
+    margin-right: 2rem;/*リストの項目と項目の間に２文字文余白を入れる*/
+  }
+
+  nav ul li a {
+    color: #461220;
+  }
+
+main{
+  display: flex;
+  flex-wrap：wrap;
+  justify-content:space-between;
+  margin-top: 1rem;
+}
+
+  section{
+    flex: 3;
+    padding: 3rem;
+    background: #fcfcfc;
+  }
+
+    article{
+      /*height: 8rem;*/
+      padding: 1rem;
+      margin-bottom: 2rem;
+      background: #FFF;
+    }
+
+    #coment{
+      margin: 1rem 2rem ;
+    }
+
+  aside{
+    flex: 1;
+    padding: 3rem;
+    background: #DDD;
+  }
+
+footer {
+  padding: 2rem 3rem;
+  text-align: center;
+  background: #333;
+  color: white;
+}
